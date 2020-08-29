@@ -34,7 +34,7 @@ type Holiday = {
     const years = [currentYear - 1, currentYear, currentYear + 1, currentYear + 2];
 
     for (const year of years) {
-        const yearPath = path.join("data", year.toString(), COUNTRY_CODE);
+        const yearPath = path.join(__dirname, "..", "data", year.toString(), COUNTRY_CODE);
         if (!fs.existsSync(yearPath)) {
             fs.mkdirSync(yearPath, { recursive: true });
         }
