@@ -1,0 +1,34 @@
+name: Update Holiday Data
+
+on:
+  schedule:
+    - cron:  "*/5 * * * *"
+
+jobs:
+  de:
+    name: Update Data for DE 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      name: Checkout
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: Install dependencies
+      run: npm install --global typescript && npm install
+      working-dir: scripts
+    - name: Pull data
+      run: npm run update-de-data
+      working-dir: scripts
+    - name: Commit
+      uses: EndBug/add-and-commit@master
+      with:
+        add: data
+        author_name: SchoolSquirrel-bot
+        author_email: team.schoolsquirrel@gmail.com
+        message: Updated `DE` holiday data
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    
