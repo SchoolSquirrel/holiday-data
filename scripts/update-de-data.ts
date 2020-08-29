@@ -1,6 +1,7 @@
 import axios from "axios";
 import * as fs from "fs";
 import * as path from "path";
+import * as cliProgress from "cli-progress";
 
 type HolidaysResponse = {
     [key: string]: {
@@ -33,6 +34,9 @@ type Holiday = {
     const currentYear = new Date().getFullYear();
     const years = [currentYear - 1, currentYear, currentYear + 1, currentYear + 2];
 
+    const progressbar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
+    progressbar.start(years.length * states.length, 0);
+
     for (const state of states) {
         const statePath = path.join(__dirname, "..", "data", COUNTRY_CODE, state);
         if (!fs.existsSync(statePath)) {
@@ -41,7 +45,6 @@ type Holiday = {
         for (const year of years) {
             const holidays_url = replaceParams(HOLIDAYS, year, state);
             const vacations_url = replaceParams(VACATIONS, year, state);
-            console.log(holidays_url);
             const holidays = (await axios.get(holidays_url)).data as HolidaysResponse;
             const vacations = (await axios.get(vacations_url)).data as VacationsResponse;
             const holidaysAndVacations: Holiday[] = [];
@@ -62,8 +65,11 @@ type Holiday = {
                 });
             }
             fs.writeFileSync(path.join(statePath, `${year}.json`), JSON.stringify(holidaysAndVacations, undefined, 4));
+            progressbar.increment();
         }
     }
+    progressbar.stop();
+    console.log(`\n\nData for ${COUNTRY_CODE} (${states.length} states) for the years ${years[0]} - ${years[years.length - 1]} updated successfully.`);
 })()
 
 function replaceParams(url: string, year: number, state: string) {
