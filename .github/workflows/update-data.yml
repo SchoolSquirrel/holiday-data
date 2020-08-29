@@ -17,10 +17,10 @@ jobs:
         node-version: 12
     - name: Install dependencies
       run: npm install --global typescript && npm install
-      working-dir: scripts
+      working-directory: scripts
     - name: Pull data
       run: npm run update-de-data
-      working-dir: scripts
+      working-directory: scripts
     - name: Commit
       uses: EndBug/add-and-commit@master
       with:
