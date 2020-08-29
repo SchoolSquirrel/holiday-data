@@ -1,0 +1,16 @@
+{
+    "name": "schoolsquirrel-holiday-data-scripts",
+    "version": "1.0.0",
+    "description": "Scripts for automatically updating the holiday data for SchoolSquirrel",
+    "scripts": {
+        "update-de-data": "tsc update-de-data.ts && node update-de-data.js"
+    },
+    "author": "Hannes Rüger",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.20.0"
+    },
+    "devDependencies": {
+        "@types/node": "^14.6.2"
+    }
+}
