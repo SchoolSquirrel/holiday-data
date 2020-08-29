@@ -1,0 +1,86 @@
+[
+    {
+        "isVacation": false,
+        "startDate": "2022-01-01T00:00:00.000Z",
+        "endDate": "2022-01-01T00:00:00.000Z",
+        "name": "Neujahrstag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-01-06T00:00:00.000Z",
+        "endDate": "2022-01-06T00:00:00.000Z",
+        "name": "Heilige Drei Könige"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-04-14T00:00:00.000Z",
+        "endDate": "2022-04-14T00:00:00.000Z",
+        "name": "Gründonnerstag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-04-15T00:00:00.000Z",
+        "endDate": "2022-04-15T00:00:00.000Z",
+        "name": "Karfreitag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-04-18T00:00:00.000Z",
+        "endDate": "2022-04-18T00:00:00.000Z",
+        "name": "Ostermontag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-05-01T00:00:00.000Z",
+        "endDate": "2022-05-01T00:00:00.000Z",
+        "name": "Tag der Arbeit"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-05-26T00:00:00.000Z",
+        "endDate": "2022-05-26T00:00:00.000Z",
+        "name": "Christi Himmelfahrt"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-06-06T00:00:00.000Z",
+        "endDate": "2022-06-06T00:00:00.000Z",
+        "name": "Pfingstmontag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-06-16T00:00:00.000Z",
+        "endDate": "2022-06-16T00:00:00.000Z",
+        "name": "Fronleichnam"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-10-03T00:00:00.000Z",
+        "endDate": "2022-10-03T00:00:00.000Z",
+        "name": "Tag der Deutschen Einheit"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-10-31T00:00:00.000Z",
+        "endDate": "2022-10-31T00:00:00.000Z",
+        "name": "Reformationstag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-11-01T00:00:00.000Z",
+        "endDate": "2022-11-01T00:00:00.000Z",
+        "name": "Allerheiligen"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-12-25T00:00:00.000Z",
+        "endDate": "2022-12-25T00:00:00.000Z",
+        "name": "1. Weihnachtstag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2022-12-26T00:00:00.000Z",
+        "endDate": "2022-12-26T00:00:00.000Z",
+        "name": "2. Weihnachtstag"
+    }
+]

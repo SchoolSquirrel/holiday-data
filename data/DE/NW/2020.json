@@ -1,0 +1,98 @@
+[
+    {
+        "isVacation": false,
+        "startDate": "2020-01-01T00:00:00.000Z",
+        "endDate": "2020-01-01T00:00:00.000Z",
+        "name": "Neujahrstag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-04-10T00:00:00.000Z",
+        "endDate": "2020-04-10T00:00:00.000Z",
+        "name": "Karfreitag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-04-13T00:00:00.000Z",
+        "endDate": "2020-04-13T00:00:00.000Z",
+        "name": "Ostermontag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-05-01T00:00:00.000Z",
+        "endDate": "2020-05-01T00:00:00.000Z",
+        "name": "Tag der Arbeit"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-05-21T00:00:00.000Z",
+        "endDate": "2020-05-21T00:00:00.000Z",
+        "name": "Christi Himmelfahrt"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-06-01T00:00:00.000Z",
+        "endDate": "2020-06-01T00:00:00.000Z",
+        "name": "Pfingstmontag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-06-11T00:00:00.000Z",
+        "endDate": "2020-06-11T00:00:00.000Z",
+        "name": "Fronleichnam"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-10-03T00:00:00.000Z",
+        "endDate": "2020-10-03T00:00:00.000Z",
+        "name": "Tag der Deutschen Einheit"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-11-01T00:00:00.000Z",
+        "endDate": "2020-11-01T00:00:00.000Z",
+        "name": "Allerheiligen"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-12-25T00:00:00.000Z",
+        "endDate": "2020-12-25T00:00:00.000Z",
+        "name": "1. Weihnachtstag"
+    },
+    {
+        "isVacation": false,
+        "startDate": "2020-12-26T00:00:00.000Z",
+        "endDate": "2020-12-26T00:00:00.000Z",
+        "name": "2. Weihnachtstag"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2020-04-06T00:00:00.000Z",
+        "endDate": "2020-04-19T00:00:00.000Z",
+        "name": "Osterferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2020-06-02T00:00:00.000Z",
+        "endDate": "2020-06-03T00:00:00.000Z",
+        "name": "Pfingstferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2020-06-29T00:00:00.000Z",
+        "endDate": "2020-08-12T00:00:00.000Z",
+        "name": "Sommerferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2020-10-12T00:00:00.000Z",
+        "endDate": "2020-10-25T00:00:00.000Z",
+        "name": "Herbstferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2020-12-23T00:00:00.000Z",
+        "endDate": "2021-01-07T00:00:00.000Z",
+        "name": "Weihnachtsferien"
+    }
+]
