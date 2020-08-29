@@ -33,16 +33,12 @@ type Holiday = {
     const currentYear = new Date().getFullYear();
     const years = [currentYear - 1, currentYear, currentYear + 1, currentYear + 2];
 
-    for (const year of years) {
-        const yearPath = path.join(__dirname, "..", "data", year.toString(), COUNTRY_CODE);
-        if (!fs.existsSync(yearPath)) {
-            fs.mkdirSync(yearPath, { recursive: true });
+    for (const state of states) {
+        const statePath = path.join(__dirname, "..", "data", COUNTRY_CODE, state);
+        if (!fs.existsSync(statePath)) {
+            fs.mkdirSync(statePath, { recursive: true });
         }
-        for (const state of states) {
-            const statePath = path.join(yearPath, state);
-            if (!fs.existsSync(statePath)) {
-                fs.mkdirSync(statePath);
-            }
+        for (const year of years) {
             const holidays_url = replaceParams(HOLIDAYS, year, state);
             const vacations_url = replaceParams(VACATIONS, year, state);
             console.log(holidays_url);
@@ -62,10 +58,10 @@ type Holiday = {
                     isVacation: true,
                     startDate: new Date(data.start),
                     endDate: new Date(data.end),
-                    name: data.name,
+                    name: data.name[0].toUpperCase() + data.name.substr(1),
                 });
             }
-            fs.writeFileSync(path.join(statePath, "holidays.json"), JSON.stringify(holidaysAndVacations, undefined, 4));
+            fs.writeFileSync(path.join(statePath, `${year}.json`), JSON.stringify(holidaysAndVacations, undefined, 4));
         }
     }
 })()
