@@ -58,5 +58,41 @@
         "startDate": "2021-12-26T00:00:00.000Z",
         "endDate": "2021-12-26T00:00:00.000Z",
         "name": "2. Weihnachtstag"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2021-02-01T00:00:00.000Z",
+        "endDate": "2021-02-07T00:00:00.000Z",
+        "name": "Winterferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2021-03-29T00:00:00.000Z",
+        "endDate": "2021-04-11T00:00:00.000Z",
+        "name": "Osterferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2021-05-14T00:00:00.000Z",
+        "endDate": "2021-05-15T00:00:00.000Z",
+        "name": "Pfingstferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2021-06-24T00:00:00.000Z",
+        "endDate": "2021-08-07T00:00:00.000Z",
+        "name": "Sommerferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2021-10-11T00:00:00.000Z",
+        "endDate": "2021-10-24T00:00:00.000Z",
+        "name": "Herbstferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2021-12-24T00:00:00.000Z",
+        "endDate": "2022-01-01T00:00:00.000Z",
+        "name": "Weihnachtsferien"
     }
 ]
