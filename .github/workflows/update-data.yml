@@ -1,8 +1,6 @@
 name: Update Holiday Data
 
-on:
-  schedule:
-    - cron:  "0 1 1 * *"
+on: push
 
 jobs:
   de:
@@ -22,12 +20,13 @@ jobs:
       run: npm run update-de-data
       working-directory: scripts
     - name: Commit
-      uses: EndBug/add-and-commit@master
+      uses: stefanzweifel/git-auto-commit-action@v4.7.2
       with:
-        add: data
-        author_name: SchoolSquirrel-bot
-        author_email: team.schoolsquirrel@gmail.com
-        message: Updated `DE` holiday data
+        file_pattern: data
+        commit_user_name: SchoolSquirrel-bot
+        commit_user_email: team.schoolsquirrel@gmail.com
+        commit_author: SchoolSquirrel-bot <team.schoolsquirrel@gmail.com>
+        commit_message: Updated `DE` holiday data
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
