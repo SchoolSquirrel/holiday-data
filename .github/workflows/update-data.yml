@@ -1,6 +1,8 @@
 name: Update Holiday Data
 
-on: push
+on:
+  schedule:
+    - cron:  "0 1 * * 1"
 
 jobs:
   de:
