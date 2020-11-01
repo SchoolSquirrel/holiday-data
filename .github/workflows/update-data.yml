@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run: npm install --global typescript && npm install
       working-directory: scripts
-    - name: Pull data
+    - name: Fetch data
       run: npm run update-de-data
       working-directory: scripts
     - name: Commit
