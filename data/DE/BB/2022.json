@@ -70,5 +70,35 @@
         "startDate": "2022-12-26T00:00:00.000Z",
         "endDate": "2022-12-26T00:00:00.000Z",
         "name": "2. Weihnachtstag"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2022-01-31T00:00:00.000Z",
+        "endDate": "2022-02-06T00:00:00.000Z",
+        "name": "Winterferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2022-04-11T00:00:00.000Z",
+        "endDate": "2022-04-24T00:00:00.000Z",
+        "name": "Osterferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2022-07-07T00:00:00.000Z",
+        "endDate": "2022-08-21T00:00:00.000Z",
+        "name": "Sommerferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2022-10-24T00:00:00.000Z",
+        "endDate": "2022-11-06T00:00:00.000Z",
+        "name": "Herbstferien"
+    },
+    {
+        "isVacation": true,
+        "startDate": "2022-12-22T00:00:00.000Z",
+        "endDate": "2023-01-04T00:00:00.000Z",
+        "name": "Weihnachtsferien"
     }
 ]
