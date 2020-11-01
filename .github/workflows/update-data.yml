@@ -7,8 +7,10 @@ jobs:
     name: Update Data for DE 
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-      name: Checkout
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
     - name: Setup Node.js
       uses: actions/setup-node@v1
       with:
@@ -23,6 +25,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4.7.2
       with:
         file_pattern: data
+        branch: master
         commit_user_name: SchoolSquirrel-bot
         commit_user_email: team.schoolsquirrel@gmail.com
         commit_author: SchoolSquirrel-bot <team.schoolsquirrel@gmail.com>
